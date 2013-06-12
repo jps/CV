@@ -44,6 +44,12 @@
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
+\usepackage{array,paralist}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\makeatletter\let\MPtrue\@minipagetrue\makeatother
+
 \begin{document}
 
 \pagestyle{empty} % Removes page numbering
@@ -71,7 +77,7 @@
 
 \section{Work Experience}
 
-\begin{tabular}{r|p{11cm}}
+\begin{tabular}{ L{2cm} | L{11cm}}	
 \textsc{Mar 2012} & Freelance Software Engineer at \textsc{The Tin Ltd}, London \\
 
 & \footnotesize{Developed back-end solutions for a variety of clients ranging from startups to leading global brands. Day to day tasks would include architecting, building, testing and maintaining a variety of .NET solutions. This role also included some front end development and some general day to day IT support tasks such as; phone system maintenance, networking maintenance and assisting colleagues.}\\
@@ -94,14 +100,34 @@
 %& \footnotesize{Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
 \end{tabular}
 
+
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{tabular}{ L{2cm} | L{11cm}}	
+\textsc{July} 2012 & Sentimentor: Sentiment Analysis of Twitter Data\\
+& \small\emph{James Spencer and Gulden Uchyigit} \\
+& \small\emph{SDAD 2012} The 1st International Workshop on Sentiment The 1st International Workshop on Sentiment Discovery from Affective Data\\
+
+
+%& In this paper we present Sentimentor, a tool for sentiment analysis of Twitter data. Sentimentor utilises the naive Bayes Classifier to classify Tweets into positive, negative or objective sets. We present experimental evaluation of our dataset and classification results, our findings are not contradictory with existing work.\\
+&\normalsize \\
+&\\
+\end{tabular}
+
+
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 
 \section{Education}
 
-\begin{tabular}{rl}	
-\textsc{July} 2012 & Bachelors of Science \textsc{Computer Science}, \textbf{University of Brighton}, UK\\
+\begin{tabular}{ L{2cm} | L{11cm}}	
+\textsc{Sept} 2008 to July 2012  & Bachelors of Science \textsc{Computer Science}, \textbf{University of Brighton}, UK\\
 & \small\emph{First Class Honours} \\
 & Thesis: ``Money is the Root of All Evil - Or is it?'' | \small Advisor: Prof. James \textsc{Smith}\\
 &\normalsize \\
@@ -126,17 +152,17 @@
 
 \end{tabular}
 
-%----------------------------------------------------------------------------------------
-%	SCHOLARSHIPS AND ADDITIONAL INFO
-%----------------------------------------------------------------------------------------
-
-\section{Scholarships and Certificates}
-
-\begin{tabular}{rl}
-\textsc{Sept.} 2012 & Faculty of Science Masters Scholarship \footnotesize(\$30,000)\normalsize\\
-
-\textsc{June} 2010 & {\textsc{Gmat}\textregistered}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile; \textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)
-\end{tabular}
+%%----------------------------------------------------------------------------------------
+%%	SCHOLARSHIPS AND ADDITIONAL INFO
+%%----------------------------------------------------------------------------------------
+%
+%\section{Scholarships and Certificates}
+%
+%\begin{tabular}{rl}
+%\textsc{Sept.} 2012 & Faculty of Science Masters Scholarship \footnotesize(\$30,000)\normalsize\\
+%
+%\textsc{June} 2010 & {\textsc{Gmat}\textregistered}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile; \textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)
+%\end{tabular}
 
 
 
@@ -146,43 +172,53 @@
 
 \section{Computer Skills}
 
-\begin{tabular}{p{5cm}p{11cm}}
+\begin{tabular}{ p{4cm} p{9cm}}
 General Development:
-&	\begin{itemize}
+&\MPtrue	    \begin{compactitem}
 		\item Version Control : Git , VSS
 		\item Automated Testing : NUnit, Selenium
 		\item Object Orientated Design
-	\end{itemize}\\
-\end{tabular}
-
-\begin{tabular}{rp{11cm}}
+	\end{compactitem} \\
+%\end{tabular}
+%
+%\begin{tabular}{ L{4cm}  L{9cm}}	
 Programming Languages:
-&	\begin{itemize}
+&\MPtrue	    \begin{compactitem}
 		\item C\#
 		\item Java
 		\item JavaScript
 		\item SQL
-	\end{itemize}\\
-\end{tabular}
-
-\begin{tabular}{rp{11cm}}
+	\end{compactitem} \\
+%\end{tabular}
+%
+%\begin{tabular}{ L{4cm}  L{9cm}}	
 Website Development:
-&	\begin{itemize}
+&\MPtrue	    \begin{compactitem}
 		\item ASP.NET MVC
 		\item HTML5
 		\item CSS3
 		\item JQuery
-	\end{itemize}\\
-\end{tabular}
-
-\begin{tabular}{rp{11cm}}
-Databases:
-&	\begin{itemize}
+	\end{compactitem} \\
+%\end{tabular}
+%
+%\begin{tabular}[t]{ L{4cm}  L{9cm}}	
+Databases: 
+&\MPtrue	    \begin{compactitem}
 		\item Microsoft SQL Server
 		\item Relational Database Design
 		\item Fluent NHibernate
 		\item Entity Framework
-	\end{itemize}\\
+	\end{compactitem} \\
+\end{tabular}
+
+\begin{tabular}{ p{4cm} p{9cm}}
+    Databases: & \MPtrue
+    \begin{compactitem}
+        \item Microsoft SQL Server
+		\item Relational Database Design
+		\item Fluent NHibernate
+		\item Entity Framework
+    \end{compactitem} \\
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
