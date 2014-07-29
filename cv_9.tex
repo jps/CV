@@ -50,6 +50,11 @@
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \makeatletter\let\MPtrue\@minipagetrue\makeatother
 
+\usepackage{enumitem}
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+
+\setlist{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+
 \begin{document}
 
 \pagestyle{empty} % Removes page numbering
@@ -60,7 +65,7 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\par{\centering{\Huge James \textsc{Spencer}}\bigskip\par} % Your name
+\par{\centering{\Huge James P. \textsc{Spencer}}\bigskip\par} % Your name
 
 \section{}
 
@@ -71,6 +76,21 @@
 \textsc{email:} & \href{mailto:me@jspenc.com}{me@jspenc.com}
 \end{tabular}
 
+
+%----------------------------------------------------------------------------------------
+%	About
+%----------------------------------------------------------------------------------------
+
+%\section{About}
+
+%My main interests are Technology, Machine Learning - specifically textual processing and sentiment analysis. I like to spend my free time Travelling, Cycling and working on personal projects.
+
+
+
+
+
+
+
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE 
 %----------------------------------------------------------------------------------------
@@ -78,6 +98,50 @@
 \section{Work Experience}
 
 \begin{tabular}{ L{2cm} | L{11cm}}	
+
+
+Jun 2013 to Current & .NET Developer at \textsc{Creator}, London \\
+
+ %\footnotesize{Developed back-end solutions for a variety of clients ranging from startups to leading global brands. Day to day tasks would include architecting, building, testing and maintaining a variety of .NET solutions. This role also included some front end development and some general day to day IT support tasks such as; phone system maintenance, networking maintenance and assisting colleagues.}\\
+ 
+ 
+
+
+
+
+%& \small{
+
+ 
+&\MPtrue	   
+\begin{itemize}[leftmargin=*]
+ 
+ %took technical owenership for a vareirty of greenfield and brownfield projects for TUI Group(Thomson, First Choice), Libery Global (Virgin Media,UPC), MSD, Late Rooms, De Vere Group and other national and multinational brands
+ 
+ %worked within an agile enviroment seeing software development from thoughjt full project life cylce, though participation in daily standups and sprint planning meetings
+ 
+ 
+ 
+		\item Architected and maintained solutions for leading multinational and national brands such as TUI Group(Thomson, First Choice), Liberty Global (Virgin Media,UPC), MSD, Late Rooms, De Vere Group. 
+
+		\item .NET solutions delivered using a variety of different platforms such as ASP.NET MVC, Web API, Web Forms, Windows Services and Web Services.
+																		
+		\item Developed high traffic scalable systems making use latest .NET features such a TAP and Parallelization libraries.
+
+		\item Ensured successful and robust .NET delivery in complex multi departmental projects though use of Scrum, TDD and continuous integration.
+
+		\item Assisted and mentored other developers whilst also gaining a great deal of experience from working in a cohesive environment with senior developers. 
+	\end{itemize} \\
+   
+    
+%      }\\
+\multicolumn{2}{c}{} \\
+
+
+
+
+
+%-------------------------------------------------
+
 Oct 2011 to Jun 2013 & Freelance Software Engineer at \textsc{The Tin Ltd}, London \\
 
  %\footnotesize{Developed back-end solutions for a variety of clients ranging from startups to leading global brands. Day to day tasks would include architecting, building, testing and maintaining a variety of .NET solutions. This role also included some front end development and some general day to day IT support tasks such as; phone system maintenance, networking maintenance and assisting colleagues.}\\
@@ -85,15 +149,31 @@ Oct 2011 to Jun 2013 & Freelance Software Engineer at \textsc{The Tin Ltd}, Lond
 
 %------------------------------------------------
 
+
+
+
 July 2010 to Oct 2011 & 1 year Industrial Placement at \textsc{The Tin Ltd}, London \\
-& \small{Developed solutions for a variety of clients ranging from startups to leading global such as \textit{PwC, O\textsubscript{2} and P\&O Cruises}. My general role was architect, build, test and maintain a varity of solutions such as CMS systems, web services and Consumer facing sites. This required me to communicate with clients on a daily basis to scope their requirements and resolve issues with live systems quickly and efficently. \newline 
-Back-end development was conducted primarily in C\# ASP.NET MVC 2-4 using FLuent Nhibernate with MSQL with some maintance still being conducted on legacy ASP.NET Web Form systems. Front-end development required the use of a variety of diffrent JavaScript libaries with JQuery being used on the majority of projects to produce AJAX based interfaces. Mobile apps were produced with phone gap for use across a variety of devices. \newline
-This role required the ability to work well under pressure and communicate well with colleagues and clients as projects often had tight deadlines and complex requirements.
+%& \small{Developed solutions for a variety of clients ranging from startups to leading global such as \textit{PwC, O\textsubscript{2} and P\&O Cruises}. My general role was architect, build, test and maintain a varity of solutions such as CMS systems, web services and Consumer facing sites. This required me to communicate with clients on a daily basis to scope their requirements and resolve issues with live systems quickly and efficiently. \newline \bigskip
+%Back-end development was conducted primarily in C\# ASP.NET MVC 2-4 using FLuent Nhibernate with MSQL with some maintenance still being conducted on legacy ASP.NET Web Form systems. Front-end development required the use of a variety of different JavaScript libraries with JQuery being used on the majority of projects to produce AJAX based interfaces. Mobile apps were produced with phone gap for use across a variety of devices. \newline \bigskip
+%This role required the ability to work well under pressure and communicate well with colleagues and clients as projects often had tight deadlines and complex requirements.
 
 
-}\\
+%}\\
 \multicolumn{2}{c}{} \\
 
+
+&\MPtrue	   
+
+\begin{itemize}[leftmargin=*]
+\item Developed solutions for a variety of clients ranging from startups to leading global such as \textit{PwC, O\textsubscript{2} and P\&O Cruises}. My general role was to architect, build, test and maintain a variety of solutions such as CMS systems, web services and Consumer facing sites. This role required a great deal of communication with clients to specify their requirements and resolve technical issues efficiently and expediently.
+
+\item Back-end development conducted primarily in ASP.NET MVC 2-4 using FLuent Nhibernate with MSQL with some maintenance still being conducted on legacy ASP.NET Web Form systems. 
+
+\item Front-end development made use JQuery, and various plugins to produce slick AJAX based interfaces. These skills were also utilized to produce Mobile applications using PhoneGap. 
+
+\item This role required the ability to work well under pressure and communicate well with colleagues and clients to produce applications with complex requirements and tight deadlines.
+
+\end{itemize} \\
 
 %\textsc{Jul 2010-Oct 2011} & Summer Intern at \textsc{Intech Inc}, Chicago \emph{}\\
 %& \footnotesize{Received pre-placed offer from the Exotics Trading Desk as a result of very positive review. Rated ``\emph{truly distinctive}'' for Analytical Skills and Teamwork.}\\
@@ -116,11 +196,11 @@ This role required the ability to work well under pressure and communicate well 
 \begin{tabular}{ L{2cm} | L{11cm}}	
 \textsc{July} 2012 & Sentimentor: Sentiment Analysis of Twitter Data\\
 & \small\emph{James Spencer and Gulden Uchyigit} \\
-& \small\emph{SDAD 2012} The 1st International Workshop on Sentiment The 1st International Workshop on Sentiment Discovery from Affective Data\\
+& \small\emph{SDAD 2012  } The 1st International Workshop on Sentiment Discovery from Affective Data\\
 
 
 %& In this paper we present Sentimentor, a tool for sentiment analysis of Twitter data. Sentimentor utilises the naive Bayes Classifier to classify Tweets into positive, negative or objective sets. We present experimental evaluation of our dataset and classification results, our findings are not contradictory with existing work.\\
-&\normalsize \\
+
 &\\
 \end{tabular}
 
@@ -138,6 +218,14 @@ This role required the ability to work well under pressure and communicate well 
 &\normalsize \\
 & \small\textbf{Modules Studied:} Programming Languages, Concurrency And Client-Server Computing, Advanced AI, Computer Graphics Algorithms, 3D Dynamic Modelling, Object-Oriented Software Design, Games Development, Computer Systems Architecture, Mathematics, Human Computer Interaction, Requirements Analysis  \\
 &\\
+
+\multicolumn{2}{c}{} \\
+
+
+%\textsc{Sept} 2006 to July 2008  &  Coombe 6th Form \\
+%& \small\textbf{A Levels:} ICT (C) Philosopy (C) \\
+%& \small\textbf{As Levls:} Film Studies (C), Geography (C) Physics(C)  \\
+%&\\
 
 %------------------------------------------------
 
@@ -173,17 +261,20 @@ This role required the ability to work well under pressure and communicate well 
 
 
 %----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS 
+%	 SKILLS 
 %----------------------------------------------------------------------------------------
 
-\section{Computer Skills}
+\section{Skills}
 
 \begin{tabular}{ p{4cm} p{9cm}}
 General Development:
 &\MPtrue	    \begin{compactitem}
-		\item Version Control : Git , VSS
-		\item Automated Testing : NUnit, Selenium
-		\item Object Orientated Design
+		\item OOD, TDD, SOLID, N-Tier
+		\item Git, TFS, VSS
+		\item NUnit, MS Test, Moq %, Selenium
+
+
+
 	\end{compactitem} \\
 %\end{tabular}
 %
@@ -191,49 +282,44 @@ General Development:
 Programming Languages:
 &\MPtrue	    \begin{compactitem}
 		\item C\#
-		\item Java
 		\item JavaScript
 		\item SQL
+		\item Java
+
 	\end{compactitem} \\
 %\end{tabular}
 %
 %\begin{tabular}{ L{4cm}  L{9cm}}	
 Website Development:
 &\MPtrue	    \begin{compactitem}
-		\item ASP.NET MVC
-		\item HTML5
-		\item CSS3
-		\item JQuery
+		\item ASP.NET MVC, Web API
+		\item Jquery, Knockout, DataTables
+		\item CSS, LESS, Bootstrap
+		\item IIS
+
+
 	\end{compactitem} \\
 %\end{tabular}
 %
 %\begin{tabular}[t]{ L{4cm}  L{9cm}}	
 Databases: 
 &\MPtrue	    \begin{compactitem}
+		\item Relational Database Design
 		\item Microsoft SQL Server
-		\item Relational Database Design
-		\item Fluent NHibernate
-		\item Entity Framework
+		\item Entity Framework, Fluent NHibernate
 	\end{compactitem} \\
-\end{tabular}
-
-\begin{tabular}{ p{4cm} p{9cm}}
-    Databases: & \MPtrue
-    \begin{compactitem}
-        \item Microsoft SQL Server
-		\item Relational Database Design
-		\item Fluent NHibernate
-		\item Entity Framework
-    \end{compactitem} \\
 \end{tabular}
 
 
 \begin{tabular}{ p{4cm} p{9cm}}
     Other: & \MPtrue
     \begin{compactitem}
-        \item Game Development in Unity
+    
+    	     \item Ninject
+    	     \item Log4Net
+  	     \item Unity
 		\item 3DS Max, Blender
-		\item Avaya phone system maintance
+		%\item Avaya phone system maintance
     \end{compactitem} \\
 \end{tabular}
 
@@ -242,11 +328,10 @@ Databases:
 %	INTERESTS AND ACTIVITIES
 %----------------------------------------------------------------------------------------
 
-\section{Interests and Activities}
+%\section{Interests and Activities}
 
-Technology, Open-Source, Programming\\
-Paradoxes in Decision Making, Psychoanalysis, Behavioural Finance\\
-Football, Travelling
+
+%My main interests are Technology, Machine Learning - specifically textual processing and sentiment analysis. I like to spend my free time Travelling, Cycling and working on personal projects.
 
 %----------------------------------------------------------------------------------------
 
